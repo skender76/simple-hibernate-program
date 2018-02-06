@@ -38,7 +38,7 @@ public class DBTradeCreation {
 		}
 		
 		factory = new Configuration().addProperties(properties)
-				.addPackage("com.iontrading.iontesterrobotlib.trades.db")
+				.addPackage("test.trades.db")
 				.addAnnotatedClass(FWTrade.class)
 				.addAnnotatedClass(FWTradeArchive.class)
 				.buildSessionFactory(new StandardServiceRegistryBuilder().applySettings(properties).build());
@@ -62,6 +62,8 @@ public class DBTradeCreation {
 		properties.put("hibernate.connection.url", dbUrl);
 		properties.put("hibernate.connection.username", username);
 		properties.put("hibernate.connection.password", password);
+		
+		properties.put("hibernate.hbm2ddl.auto", "create");
 	}
 	
 	private static void initOracle10DB(String dbUrl, String username, String password) {

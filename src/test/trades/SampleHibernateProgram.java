@@ -9,7 +9,7 @@ public class SampleHibernateProgram {
 		Random randomno = new Random();
 		
 		DBTradeCreation tradeCreation = new DBTradeCreation();
-		tradeCreation.initDB("MYSQL", "jdbc:mysql://localhost:3306/mysql", "root", "test123");
+		tradeCreation.initDB("MYSQL", "jdbc:mysql://localhost:3306/mylocaldb", "root", "test123");
 
 //		System.out.println("FW_trade: " + tradeCreation.queryTrades());
 //		String tradeId = Integer.toString(randomno.nextInt(10000));
