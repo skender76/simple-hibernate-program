@@ -1,4 +1,4 @@
-package com.iontrading.iontesterrobotlib.trades.db;
+package test.trades.db;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;

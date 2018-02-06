@@ -1,4 +1,4 @@
-package com.iontrading.iontesterrobotlib.trades;
+package test.trades;
 
 import java.util.List;
 import java.util.Properties;
@@ -15,9 +15,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
-import com.iontrading.iontesterrobotlib.trades.db.FWTradeArchive;
-import com.iontrading.iontesterrobotlib.trades.db.FWTrade;
-import com.iontrading.iontesterrobotlib.trades.db.FWTradePrimaryKey;
+import test.trades.db.FWTrade;
+import test.trades.db.FWTradeArchive;
+import test.trades.db.FWTradePrimaryKey;
 
 public class DBTradeCreation {
 

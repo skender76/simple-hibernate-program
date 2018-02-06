@@ -1,4 +1,4 @@
-package com.iontrading.iontesterrobotlib.trades;
+package test.trades;
 
 import java.util.Random;
 
